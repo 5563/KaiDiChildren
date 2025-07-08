@@ -1,12 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import { createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
       name: 'home',
+      redirect: '/tablePage',
       component: HomeView,
     },
     {
@@ -16,6 +18,16 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
+    },
+    {
+      path: '/cesium',
+      name: 'cesium',
+      component: () => import('../views/CesiumPage/CesiumPageView.vue'),
+    },
+    {
+      path: '/tablePage',
+      name: 'tablePage',
+      component: () => import('../views/TablePage/TablePage.vue'),
     },
   ],
 })

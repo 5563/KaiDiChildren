@@ -22,23 +22,23 @@ export default defineConfig({
     importToCDN({
       enableInDevMode: true,
       modules: [
-        {
-          name: 'vue',
-          path: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/js/vue.global.prod.js',
-          var: 'Vue',
-        },
+        // {
+        //   name: 'vue',
+        //   path: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/js/vue.global.prod.js',
+        //   var: 'Vue',
+        // },
         // {
         //   name: 'cesium',
         //   path: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/cesium/Cesium.js',
         //   css: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/cesium/Widgets/widgets.css',
         //   var: 'Cesium',
         // },
-        {
-          css: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/js/elementui.index.css',
-          name: 'element-plus',
-          path: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/js/elementui.full.min.js',
-          var: 'ElementPlus',
-        },
+        // {
+        //   css: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/js/elementui.index.css',
+        //   name: 'element-plus',
+        //   path: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/js/elementui.full.min.js',
+        //   var: 'ElementPlus',
+        // },
         {
           name: 'axios',
           path: 'https://web3d2022.oss-cn-shenzhen.aliyuncs.com/js/axios.min.js',

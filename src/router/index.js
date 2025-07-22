@@ -1,35 +1,43 @@
-import { createRouter } from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
-import { createWebHashHistory } from 'vue-router'
 
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      redirect: '/tablePage',
-      component: HomeView,
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    redirect: '/tablePage',
+    component: HomeView,
+    meta: {
+      title: '首页',
     },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+  },
+  {
+    path: '/about',
+    name: 'about',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/AboutView.vue'),
+    meta: {
+      title: '关于',
     },
-    {
-      path: '/cesium',
-      name: 'cesium',
-      component: () => import('../views/CesiumPage/CesiumPageView.vue'),
+  },
+  {
+    path: '/cesium',
+    name: 'cesium',
+    component: () => import('../views/CesiumPage/CesiumPageView.vue'),
+    meta: {
+      title: 'cesium',
     },
-    {
-      path: '/tablePage',
-      name: 'tablePage',
-      component: () => import('../views/TablePage/TablePage.vue'),
+  },
+  {
+    path: '/tablePage',
+    name: 'tablePage',
+    component: () => import('../views/TablePage/TablePage.vue'),
+    meta: {
+      title: '表格',
     },
-  ],
-})
+  },
+]
 
-export default router
+export default routes

@@ -18,7 +18,7 @@ jobs:
       - name: 设置node版本
         uses: actions/setup-node@v4
         with:
-          node-version: 22.11.0
+          node-version: '22'
           cache: 'pnpm'
 
       - name: 安装依赖和打包

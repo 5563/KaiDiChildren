@@ -23,14 +23,6 @@ const routes = [
     },
   },
   {
-    path: '/cesium',
-    name: 'cesium',
-    component: () => import('../views/CesiumPage/CesiumPageView.vue'),
-    meta: {
-      title: 'cesium',
-    },
-  },
-  {
     path: '/tablePage',
     name: 'tablePage',
     component: () => import('../views/TablePage/TablePage.vue'),

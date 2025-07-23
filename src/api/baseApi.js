@@ -1,9 +1,15 @@
-import { getAction, deleteAction } from '@common/api/index.js'
+import { getAction, deleteAction, postAction, putAction } from '@common/api/index.js'
 
 
 export const getRoomList = (params) => {
-    return getAction('/api/baseInfo/room/List', params)
+    return getAction('/api/sso/Role/list', params)
 }
 export const deleteRoom = (params) => {
-    return deleteAction('/api/baseInfo/room/delete', params)
+    return deleteAction('/api/sso/Role/delete', params)
+}
+export const addRoom = (params) => {
+    return postAction('/api/sso/Role/add', params)
+}
+export const updateRoom = (params) => {
+    return postAction('/api/sso/Role/update', params)
 }

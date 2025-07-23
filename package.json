@@ -13,12 +13,10 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "axios": "^1.10.0",
-    "cesium": "^1.130.1",
     "dayjs": "^1.11.13",
     "element-plus": "^2.10.2",
     "pinia": "^3.0.3",
     "unplugin-element-plus": "^0.10.0",
-    "vite-plugin-cesium": "^1.2.23",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },

@@ -4,7 +4,6 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
-import cesium from 'vite-plugin-cesium'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
@@ -14,6 +13,7 @@ import importToCDN from 'vite-plugin-cdn-import'
 // https://vite.dev/config/
 export default defineConfig({
   server: {
+    base: './',
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
@@ -64,7 +64,6 @@ export default defineConfig({
     vue(),
     vueJsx(),
     vueDevTools(),
-    cesium(),
     ElementPlus(),
     AutoImport({
       resolvers: [ElementPlusResolver()],

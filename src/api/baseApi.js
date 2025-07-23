@@ -1,4 +1,4 @@
-import { getAction, deleteAction, postAction, putAction } from '@common/api/index.js'
+import { getAction, deleteAction, postAction } from '@common/api/index.js'
 
 
 export const getRoomList = (params) => {

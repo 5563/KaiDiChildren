@@ -13,7 +13,7 @@ import importToCDN from 'vite-plugin-cdn-import'
 // https://vite.dev/config/
 export default defineConfig({
   server: {
-    base: './',
+    base: '/KaiDiChildren/',
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
